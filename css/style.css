@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+
+img {
+    width: 100%;
+}
+
+h2 {
+    color: blue;
+}
+
+.container {
+    display: flex;
+}
+
+.item {
+    width: 30%;
+    margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .item {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 30%;
+        background-color: aquamarine;
+    }
+
+}
